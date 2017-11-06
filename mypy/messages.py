@@ -633,7 +633,7 @@ class MessageBuilder:
                 arg_type_str = '*' + arg_type_str
             elif arg_kind == ARG_STAR2:
                 arg_type_str = '**' + arg_type_str
-            msg = 'Argument {} {}has incompatible type {}; expected {}'.format(
+            msg = 'Argument {} {} has incompatible type {}; expected {}'.format(
                 n, target, self.quote_type_string(arg_type_str),
                 self.quote_type_string(expected_type_str))
             if isinstance(arg_type, Instance) and isinstance(expected_type, Instance):
